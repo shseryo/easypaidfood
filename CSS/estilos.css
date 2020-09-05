@@ -1,0 +1,402 @@
+/* Barra de navegacion */
+
+header .navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+    
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.navbar-dark .navbar-nav .active>.nav-link{
+    color:  #000000;
+}
+header .navbar-expand-lg {
+    background-color: #ffcc00!important;  
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+}
+#navbarNav ul li a:hover{
+    border-bottom: 1px solid #fff;  
+}
+
+/*inicio */
+.carousel-caption {
+    bottom: 50%;
+}
+.carousel-caption h2{
+    font-size: 50px;
+}
+.carousel-caption p{
+    margin-top: 40px;
+    font-size: 20px;
+}
+.carousel-caption button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+}
+/*Nosotros*/
+.nosotros{
+    width: 100%;
+    
+}
+.nosotros .texto{
+    max-width: 900px;
+    text-align: justify;
+    margin: auto ;
+    padding-top: 120px ;
+    font-size: 20px;
+    text-align: center;
+}
+.nosotros .carousel1{
+  
+    max-width: 70%;
+    border: 2px solid #000;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin: 0 20% 0;
+    margin-bottom: 100px;
+}
+/*servicios */
+#servicios .servicios{
+    background: rgba(255, 204, 0,.9);
+    height: 200px;
+}
+ .servicios h2{
+    width: 46%;
+    position: absolute;
+    text-align: center;
+    margin-top: 125px;
+    color: #330000;
+    font-size: 40px;
+}
+.servicios img{
+    width: 50%;
+    height: 100%;
+    max-height: 200px;
+    float: right;
+    clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.containerservicios .row .col img{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    max-width: 220px;
+}
+.containerservicios .row {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.containerservicios .row .col p{
+    max-width: 300px;
+    text-align: center;
+    margin: auto ;  
+    padding: 5%;
+    font-size: 20px;
+}
+/*equipotrabajo*/
+.equipo{     
+    background: url("../img/equipo.png");
+}
+.equipo h1{
+   padding-top: 80PX;
+   margin-bottom: 70PX;
+   color: #330000;
+   font-size: 60px;
+   text-align: center;  
+}
+.equipo .row {
+   width: 100%;   
+   padding-bottom: 12%;
+}
+.equipo .row .col img{
+   max-width: 30%;
+   display: block;
+   margin: auto;
+}
+.equipo .row .col p{
+   width: 100%;
+   color: #330000;
+   text-align: center;
+   border: 2px solid #330000;
+   padding: 10px;
+   word-wrap: break-word;
+}
+
+#contacto .container-contacto {
+    max-width: 100%;
+    margin-left: 4px;
+   
+}
+/*contactos*/
+#contacto .container-contacto {
+    background-color: #330000;
+}
+
+.container-contacto h3{
+   width: 100%;
+   text-align: center;
+   color: #fff;
+   padding: 10px;
+   word-wrap: break-word;   
+}
+.container-contacto p{
+   width: 100%;
+   text-align: center;
+   color: #fff;
+   padding: 10px;
+   word-wrap: break-word;
+
+}
+.container-contacto .row .col img{
+   padding-top: 20px;
+   display: block;
+   margin: auto;
+   
+}
+.container-contacto .row{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.container-contacto .row-cols-3>* {
+    -ms-flex: 0 0 33.333333%;
+    flex: 100%;
+    max-width: 32%;
+
+
+}
+
+
+/*responsive tablet*/
+@media only screen and (max-width: 1024px) and (min-width: 990px){
+
+    /*navegacion*/
+    header .navbar-expand-lg {
+        background-color: #ffcc00!important;  
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+        top: auto;
+    }
+    /*carousel Bienvenidos*/
+    header .hero{
+        padding-top: 125px;
+    }
+    /*carousel Nosostros*/
+    .nosotros .carousel1{
+        width: 70%;
+        margin-left: 15%;
+        padding: 20px 20px;
+     }
+     /*servicios*/
+     .servicios h2{
+        width: 46%;
+        position: absolute;
+        text-align: center;
+        margin-top: 125px;
+        color: #330000;
+        font-size: 40px;
+    }
+    .servicios img{
+        width: 50%;
+        max-width: 400px;
+        height: 100%;
+        max-height: 200px;
+        float: right;
+        clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    #servicios .servicios {
+        background: rgba(255, 204, 0,.9);
+        height: 200px;
+        max-width: 100%;
+    }
+    .containerservicios .row .col img {
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        max-width: 150px;
+        
+    }
+    .containerservicios .row-cols-2>* {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 45%;
+        max-width: 50%;
+        padding-left: 12%;
+    }
+    /*equipo*/
+    .equipo .row-cols-3>* {
+        flex: 20%;
+        max-width: 30%;
+        margin-left: 125px;
+
+    }
+    .container-contacto .row-cols-3>* {
+        flex: 100%;
+        max-width: 97%;
+    }
+}
+
+/*responsive tablet*/
+    
+@media only screen and (max-width: 989px) and (min-width: 758px){
+    
+    /*navegacion*/
+    header .navbar-expand-lg {
+        background-color: #ffcc00!important;  
+        position: fixd;
+        width: 100%;
+        z-index: 1000;
+        top: auto;
+    }
+    /*carousel Bienvenida*/
+    header .hero{
+        padding-top: 125px;
+        }
+    .carousel-caption {
+        bottom: 24%;
+    }
+    /*carousel Nosotros*/
+    .nosotros .carousel1{
+        width: 970%;
+        margin-left: 15%;
+        padding: 20px 20px;
+    }
+    /*servicios */
+    .servicios h2{
+        width: 46%;
+        position: absolute;
+        text-align: center;
+        margin-top: 125px;
+        color: #330000;
+        font-size: 30px;
+    }
+    .servicios img{
+        width: 50%;
+        max-width: 400px;
+        height: 100%;
+        max-height: 200px;
+        float: right;
+        clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+    #servicios .servicios {
+        background: rgba(255, 204, 0,.9);
+        height: 200px;
+        max-width: 100%;
+    }
+    .containerservicios .row .col img {
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        max-width: 140px;
+    }
+    .containerservicios .row-cols-2>* {
+        flex: 51%;
+        max-width: 70%;
+        margin-left: 127px;  
+        
+    }
+    .equipo .row-cols-3>* {
+        flex: 51%;
+        max-width: 70%;
+        margin-left: 130px;
+    }
+    .container-contacto .row-cols-3>* {
+        flex: 51%;
+        max-width: 87%;
+    }
+}
+
+@media only screen and (max-width: 540px) and (min-width: 220px){
+       
+   /*navegacion*/
+   header .navbar-expand-lg {
+       background-color: #ffcc00!important;  
+       position: fixd;
+       width: 100%;
+       z-index: 1000;
+       top: auto;
+   }
+    /*carousel Bienvenida*/
+   .carousel-caption {
+    bottom: 14%;
+   }
+   header .hero{
+    padding-top: 125px;
+}
+   /*carousel nosotros*/
+   .nosotros p{
+       font-size: 15px;
+   }
+   .nosotros .carousel1{
+       width: 90%;
+       margin-left: 15%;
+       margin: 0 15% 0;
+       padding: 10px 10px;
+   }
+   /*servicios*/
+   .servicios h2{
+       width: 50%;
+       position: absolute;
+       text-align: center;
+       margin-top: 60px;
+       color: #330000;
+       font-size: 14px;
+   }
+   .servicios img{
+       width: 50%;
+       max-width: 200px;
+       height: 100%;
+       max-height: 200px;
+       float: right;
+       clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
+   }
+   #servicios .servicios {
+       background: rgba(255, 204, 0,.9);
+       height: 102px;
+       max-width: 100%;
+   }
+   .containerservicios .row .col img {
+       display: block;
+       margin: auto;
+       border-radius: 50%;
+       max-width: 70px;
+   }
+   .containerservicios .row .col p {
+    max-width: 120px;
+    text-align: center;
+    margin: auto;
+    padding: 10%;
+    font-size: 13px;
+}
+   .containerservicios .row-cols-2>* {
+       max-width: 50%;
+       margin-left: 60px;
+       padding-right: 0px;
+    padding-left: 46px;
+   }
+   /*equipo*/
+   .equipo .row-cols-3>* {
+    flex: 47%;
+    max-width: 55%;
+    margin-left: 60px;
+    padding-left: 38px;
+    padding-right: 0px;
+}
+.container-contacto .row-cols-3>* {
+    flex: 51%;
+    max-width: 80%;
+    
+}
+}
+.container-contacto .row .col img {
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+    max-width: 244px;
+}
+.container-contacto .row-cols-3>* {
+    flex: 51%;
+    max-width: 100%;
