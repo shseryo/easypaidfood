@@ -125,25 +125,22 @@ header .navbar-expand-lg {
    padding: 10px;
    word-wrap: break-word;
 }
-
+/*contacto*/
 #contacto .container-contacto {
     max-width: 100%;
-    margin-left: 4px;
-   
+    margin-left: 4px;   
 }
-/*contactos*/
-#contacto .container-contacto {
+footer {
     background-color: #330000;
 }
-
-.container-contacto h3{
+footer h3{
    width: 100%;
    text-align: center;
    color: #fff;
    padding: 10px;
    word-wrap: break-word;   
 }
-.container-contacto p{
+footer p{
    width: 100%;
    text-align: center;
    color: #fff;
@@ -151,26 +148,15 @@ header .navbar-expand-lg {
    word-wrap: break-word;
 
 }
-.container-contacto .row .col img{
+footer .row .col img{
    padding-top: 20px;
    display: block;
    margin: auto;
-   
-}
-.container-contacto .row{
-    margin-right: 1%;
-    margin-left: 1%;
-}
-.container-contacto .row-cols-3>* {
-    -ms-flex: 0 0 33.333333%;
-    flex: 100%;
-    max-width: 32%;
-
-
 }
 
 
-/*responsive tablet*/
+
+/*responsive mini*/
 @media only screen and (max-width: 1024px) and (min-width: 990px){
 
     /*navegacion*/
@@ -233,10 +219,8 @@ header .navbar-expand-lg {
         margin-left: 125px;
 
     }
-    .container-contacto .row-cols-3>* {
-        flex: 100%;
-        max-width: 97%;
-    }
+  
+  
 }
 
 /*responsive tablet*/
@@ -303,9 +287,9 @@ header .navbar-expand-lg {
         max-width: 70%;
         margin-left: 130px;
     }
-    .container-contacto .row-cols-3>* {
+    footer .row-cols-3>* {
         flex: 51%;
-        max-width: 87%;
+        max-width: 100%;
     }
 }
 
@@ -397,6 +381,7 @@ header .navbar-expand-lg {
     margin: auto;
     max-width: 244px;
 }
-.container-contacto .row-cols-3>* {
+footer .row-cols-3>* {
     flex: 51%;
     max-width: 100%;
+}
